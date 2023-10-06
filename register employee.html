@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register an employee</title>
+
+
+</head>
+<body>
+    <h1>employee registration form</h1>
+    <form action="thankyou.html">
+        <label for="fullname">full name</label><br><input type="text" name="full name required" placeholder="enter the  full name " autofocus required>
+       <br>
+        <label for=" email">Email</label> <br>
+        <input type="email" placeholder="enter the email" required>
+        <br>
+        <label for="date">date</label><br>
+     <input type="date" id="dateofbirth" required>
+     <br>
+     <label for="age">Age</label><br>
+     <input type="number" placeholder="enter the age">
+     <br>
+     <label for="rating">years of expericen</label><br>
+     <input type="range"  name="rating" min="0" max="100" step="1" value="0" onchange="displayRating(this)" oninput="output.value=rating.value">
+     <output id="ratingvalue">0</output>
+     <br>
+     <label for="phone">phone</label><br>
+     <input type="tel" id="phone-num" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx" required>
+     <br>
+     <a href="thankyou.html"><input type="submit"></a>
+     <p>field marks are required</p>
+    </form>
+
+    
+    <script>
+        function displayRating(slider){
+    document.getElementById("ratingvalue").innerHTML=slider.value;
+}
+    </script>
+</body>
+</html>

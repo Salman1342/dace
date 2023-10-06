@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inline css</title>
+    <link href="global.css" type="text/css" rel="stylesheet" media="all">
+    <link href="font-properties.css" type="text/css" rel="stylesheet"
+
+
+media="all"> 
+
+
+
+    <style type="text/css" media="all">
+        @import url('ch01.css');
+h1 {
+color: red;
+font-size: 3em;
+font-weight: bold; } 
+        h1 {
+        color: red;
+        font-size: 3em;
+        font-weight: bold; }
+        h1 .chaptertitle {
+            color: green;
+            font-size: 3rem;}
+        p {color: aqua;
+            font-family: perpetus;
+            line-height: 1.5;
+            text-indent: 3em;}
+        .chaptertitle {
+                       font-family: perpetua, georgia, serif;
+                      font-variant: small-caps;
+                       letter-spacing: .1em; } 
+        a.chaptertitle {
+          font-size: 2em;
+           font-style: italic; }
+           a:link {
+          color: darkred;
+           border-bottom: 1px solid red; }
+       a:visited {
+            color: darkred;
+            border-bottom: 1px dashed red;}
+        body{font-family: 'BodyCopy'Constantia, Georgia, "Times New Roman", serif;
+        text-align: justify;
+        text-justify: distribute; }
+        h1, h2, .author {
+            font-family:'TitleCopy' Corbel, Helvetica, Arial, sans-serif;
+             }
+         h2.chaptertitle {
+             font-family: 'TitleCopy'Corbel, Helvetica, Arial, sans-serif;
+             vertical-align: middle;
+             font-size: 200%; 
+             }
+             h1{
+                font-style: italic; 
+
+             }
+             .author {text-transform: uppercase;}
+             h2 {text-align: center;
+}
+ 
+</style>
+</head>
+
+
+        
+        
+</head>
+<body>
+    <h1 style="color:orange;">Alice&#8217;s Adventures In Wonderland</h1>
+<h1 id="ch01"> 1 <span class="chaptertitle">Chapter 1 Down the Rabbit-Hole</></h1> 
+</article>
+<footer><nav> Next:
+<a class="chaptertitle" href="AAIWL.html">The Pool of Tears</a>
+</nav></footer>
+</body>
+</html>
